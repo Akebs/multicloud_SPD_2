@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <h2>Formulários</h2>
+    <h4><a class="btn" href="{% url 'Formulario:add_formulario' %}">Add Formulário</a></h4>
+    <table style="width:100%">
+      <tr>
+        <th>Nome</th>
+        <th>Tipo de Formulário</th>
+        <th>Tipo de Evento</th>
+        <th>Estado</th>
+        <th>Opção</th>
+      </tr>
+      {% for f in Formulario %}
+      <tr>
+        <td>{{f.nome}}</td>
+        <td>{{f.tipo_de_formulárioid}}</td>
+        <td>{{f.tipo_de_eventoid}}</td>
+        <td>
+          {% if f.publico == True %}
+            Publico
+          {% else %}
+            Não está Publico
+          {% endif %}
+        </td>
+        <td>
+          <a href="" class="card-link">Editar</a>
+          <a> | </a>
+          <a href="" class="card-link">Remover</a>
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+
+</body>
+
+</html>

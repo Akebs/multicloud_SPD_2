@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <h2>{% if evento %}Inscrições de {{evento.nome}}
+  {% else %}Todas as Inscrições
+  {% endif %}</h2>
+  <div class="container">
+    <table style="width:100%">
+      <tr>
+        {% if not evento %}
+        <th>Evento</th>
+        {% endif %}
+        <th>Participante</th>
+        <th>Divida</th>
+        <th>CheckIn</th>
+        <th>Válido</th>
+      </tr>
+      {% for i in Inscrição %}
+      <tr>
+        {% if not evento %}
+        <td>{{i.eventoid.nome}}</td>
+        {% endif %}
+        <td>{{i.participanteutilizadorid.utilizadorid.nome}}</td>
+        <td>
+          {% for d in Dividas %}
+            {% if d.inscriçãoid == i %}
+              {{d.divida}}€
+            {% endif %}
+          {% endfor %}
+        </td>
+        <td>{{i.checkin}}</td>
+        <td>{% if i.valido == 0 %}NÃO{% else %}SIM{% endif %}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+
+</body>
+
+</html>
