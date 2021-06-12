@@ -26,9 +26,10 @@ SECRET_KEY = 'django-insecure-bt$di!z6sc$aw8-&)l0mm))+$u*!&n$&3hnt4wi*pp)ob+mj03
 DEBUG = True
 
 ## FOR all include CNAME/WEBSITE_HOSTNAME environment variable in ALLOWED_HOSTS
-ALLOWED_HOSTS = ['steadfast-pivot-316318.ew.r.appspot.com',                 #gcp
-                 'azureradd.azurewebsites.net',                             #azure
-                 'django-env2.eba-n2m2jikz.us-west-2.elasticbeanstalk.com'  #aws
+ALLOWED_HOSTS = ['127.0.0.1',
+                 'steadfast-pivot-316318.ew.r.appspot.com',                #gcp
+                 'azureradd.azurewebsites.net',                            #azure
+                 'django-env2.eba-n2m2jikz.us-west-2.elasticbeanstalk.com' #aws
                  ]
 
 
