@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from ..hello import *
+from hello import *
 from .forms import *
 
 def function(request):
