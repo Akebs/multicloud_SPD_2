@@ -30,7 +30,8 @@ LOGGING = { 'version': 1, 'disable_existing_loggers': False, 'handlers': { 'file
 
 
 ## FOR all include CNAME/WEBSITE_HOSTNAME environment variable in ALLOWED_HOSTS
-ALLOWED_HOSTS = ['127.0.0.1',
+ALLOWED_HOSTS = ['*',
+                 '127.0.0.1',
                  'steadfast-pivot-316318.ew.r.appspot.com',                #gcp
                  'azureradd.azurewebsites.net',                            #azure
                  'https://azureraddpy.azurewebsites.net/'                  #azure2
