@@ -25,6 +25,10 @@ SECRET_KEY = 'django-insecure-bt$di!z6sc$aw8-&)l0mm))+$u*!&n$&3hnt4wi*pp)ob+mj03
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+## Enable logging
+LOGGING = { 'version': 1, 'disable_existing_loggers': False, 'handlers': { 'file': { 'level': 'DEBUG', 'class': 'logging.FileHandler', 'filename': '/tmp/debug.log', }, }, 'loggers': { 'django': { 'handlers': ['file'], 'level': 'DEBUG', 'propagate': True, }, }, }
+
+
 ## FOR all include CNAME/WEBSITE_HOSTNAME environment variable in ALLOWED_HOSTS
 ALLOWED_HOSTS = ['127.0.0.1',
                  'steadfast-pivot-316318.ew.r.appspot.com',                #gcp
