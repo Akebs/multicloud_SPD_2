@@ -1,4 +1,4 @@
-[![Python application test with Github Actions](https://github.com/Akebs/multi-cloud/actions/workflows/main.yml/badge.svg)](https://github.com/Akebs/multi-cloud/actions/workflows/main.yml)
+[![Python application test with Github Actions](https://github.com/Akebs/multicloud_SPD_2/actions/workflows/main.yml/badge.svg)](https://github.com/Akebs/multicloud_SPD_2/actions/workflows/main.yml)
 
 # Cloud Services Testing (AWS,GCP,MSA)
 
