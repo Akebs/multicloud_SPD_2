@@ -29,6 +29,7 @@ DEBUG = False
 ALLOWED_HOSTS = ['127.0.0.1',
                  'steadfast-pivot-316318.ew.r.appspot.com',                #gcp
                  'azureradd.azurewebsites.net',                            #azure
+                 'https://azureraddpy.azurewebsites.net/'                  #azure2
                  'django-env2.eba-n2m2jikz.us-west-2.elasticbeanstalk.com' #aws
                  'awsadd.eba-7uvindqg.us-west-2.elasticbeanstalk.com'      #aws2
                  ]
