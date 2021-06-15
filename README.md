@@ -14,6 +14,10 @@ It also includes a Github Actions workflow to install list, test and format the 
 
 A Django frame is used to generate a simple form view to input integer values and display the add result.
 
+## Preview:
+
+<img src="https://github.com/Akebs/multicloud_SPD_2/blob/main/Sem%20T%C3%ADtulo.png" width="480" >
+
 ## Notes:
 
 Required local modifications in settings.py are in included folders for each cloud provider.
